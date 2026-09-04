@@ -1,0 +1,17 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Blackstar Beauty Center Icon</title>
+  <desc id="desc">Black and gold butterfly face mark.</desc>
+  <rect width="512" height="512" rx="96" fill="#F8F5EF"/>
+  <circle cx="256" cy="256" r="188" stroke="#C8A24A" stroke-width="10"/>
+  <path d="M251 95C183 105 127 164 122 235C117 307 168 365 241 367C202 327 183 284 191 235C198 186 223 141 251 95Z" stroke="#141414" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M267 106C319 129 353 173 360 228C368 294 332 349 271 366C302 313 307 259 288 205C281 182 273 143 267 106Z" stroke="#141414" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M225 133C205 180 209 220 238 253C261 279 260 320 225 355" stroke="#141414" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M287 155C326 194 333 248 305 300" stroke="#141414" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M241 370C260 387 279 387 298 370" stroke="#141414" stroke-width="14" stroke-linecap="round"/>
+  <path d="M363 88C419 134 445 203 433 274" stroke="#C8A24A" stroke-width="12" stroke-linecap="round"/>
+  <path d="M389 146C423 128 445 105 455 78" stroke="#C8A24A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M403 197C447 182 474 153 487 112" stroke="#C8A24A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M408 253C453 250 486 228 510 190" stroke="#C8A24A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M126 86C85 124 61 177 56 234" stroke="#C8A24A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M91 67L103 91L129 96L110 115L115 141L91 128L67 141L72 115L53 96L79 91L91 67Z" fill="#C8A24A"/>
+</svg>

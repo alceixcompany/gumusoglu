@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 260" role="img" aria-labelledby="title desc">
+  <title id="title">Sunny Life Solarium &amp; Beauty</title>
+  <desc id="desc">Güneş ışınları ve ufuk çizgisinden oluşan Sunny Life Solarium logosu.</desc>
+  <g fill="none" stroke="#17130f" stroke-linecap="round">
+    <path d="M226 108c31-29 70-44 114-44s83 15 114 44" stroke-width="5"/>
+    <path d="M340 15v35M311 20l7 32M282 31l14 29M256 48l20 24M235 70l26 18M222 96l30 10M458 96l-30 10M445 70l-26 18M424 48l-20 24M398 31l-14 29M369 20l-7 32" stroke-width="5"/>
+    <path d="M180 206c88-28 205-28 320 0-97-10-204-8-320 24 92-11 192-9 298 14" stroke-width="5"/>
+  </g>
+  <text x="340" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" letter-spacing="8" fill="#17130f">SUNNY LIFE</text>
+  <text x="340" y="188" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="500" letter-spacing="13" fill="#9b692e">SOLARIUM</text>
+  <text x="340" y="222" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" letter-spacing="7" fill="#17130f">&amp; BEAUTY</text>
+</svg>

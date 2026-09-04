@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Sunny Life</title>
+  <rect width="128" height="128" rx="26" fill="#17130f"/>
+  <g fill="none" stroke="#d9a35d" stroke-linecap="round" stroke-width="3">
+    <path d="M30 70c9-20 21-30 34-30s25 10 34 30"/>
+    <path d="M64 19v14M49 22l4 13M36 29l8 11M27 40l11 8M22 54l13 4M106 54l-13 4M101 40l-11 8M92 29l-8 11M79 22l-4 13"/>
+    <path d="M19 80c28-9 58-9 90 0-29-2-58 2-88 14 25-5 52-4 83 4"/>
+  </g>
+</svg>

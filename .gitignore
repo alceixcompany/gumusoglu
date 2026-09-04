@@ -1,0 +1,42 @@
+# Dependencies
+/node_modules/
+/.pnp
+.pnp.*
+
+# Next.js build output
+/.next/
+/out/
+
+# Production builds and test coverage
+/build/
+/coverage/
+
+# Local environment variables
+.env*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Deployment platforms
+.vercel/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Certificates and keys
+*.pem
+*.key

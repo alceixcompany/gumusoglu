@@ -1,0 +1,22 @@
+<svg width="920" height="300" viewBox="0 0 920 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Blackstar Beauty Center Logo</title>
+  <desc id="desc">Gold and black butterfly face mark with Blackstar Beauty Center text.</desc>
+  <rect width="920" height="300" fill="none"/>
+  <g transform="translate(359 8) scale(0.82)">
+    <path d="M98 22C59 28 27 62 24 103C21 145 50 178 93 179C70 156 59 131 64 102C68 74 82 48 98 22Z" stroke="#141414" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M105 29C135 42 154 67 158 99C163 136 143 167 108 177C126 146 129 115 118 84C114 71 109 51 105 29Z" stroke="#141414" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M84 43C72 70 74 93 91 112C104 127 104 151 84 169" stroke="#141414" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M117 55C139 78 143 109 127 139" stroke="#141414" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M91 180C102 190 113 190 124 180" stroke="#141414" stroke-width="7" stroke-linecap="round"/>
+    <path d="M30 100C11 101 0 112 0 126C0 140 12 149 26 145" stroke="#141414" stroke-width="6" stroke-linecap="round"/>
+    <path d="M157 99C178 100 190 112 190 127C190 141 178 149 163 145" stroke="#141414" stroke-width="6" stroke-linecap="round"/>
+    <path d="M166 23C196 47 211 84 205 122" stroke="#C8A24A" stroke-width="6" stroke-linecap="round"/>
+    <path d="M179 54C198 44 210 31 215 17" stroke="#C8A24A" stroke-width="5" stroke-linecap="round"/>
+    <path d="M187 82C211 74 226 58 233 36" stroke="#C8A24A" stroke-width="5" stroke-linecap="round"/>
+    <path d="M190 113C215 111 233 99 246 78" stroke="#C8A24A" stroke-width="5" stroke-linecap="round"/>
+    <path d="M44 18C22 38 9 66 6 96" stroke="#C8A24A" stroke-width="5" stroke-linecap="round"/>
+    <path d="M28 12L34 24L47 26L37 35L40 49L28 42L15 49L18 35L8 26L22 24L28 12Z" fill="#C8A24A"/>
+  </g>
+  <text x="460" y="224" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" letter-spacing="3" fill="#5D5D5D">BLACKSTAR</text>
+  <text x="460" y="270" text-anchor="middle" font-family="'Brush Script MT', 'Segoe Script', cursive" font-size="34" fill="#151515">Beauty center</text>
+</svg>

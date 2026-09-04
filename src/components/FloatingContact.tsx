@@ -1,0 +1,3 @@
+'use client';
+import { usePathname } from 'next/navigation'; import { FaWhatsapp } from 'react-icons/fa';
+export default function FloatingContact(){const p=usePathname();if(p?.startsWith('/admin'))return null;return <a href="https://wa.me/905384682399" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile iletişim" className="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_12px_35px_rgba(37,211,102,.35)] transition hover:-translate-y-1 sm:bottom-7 sm:right-7 sm:h-16 sm:w-16"><FaWhatsapp className="h-8 w-8"/></a>}

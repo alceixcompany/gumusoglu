@@ -1,0 +1,171 @@
+{
+  "kategoriler": [
+    {
+      "id": "tesisat-teknolojileri",
+      "name": "Tesisat Teknolojileri",
+      "count": 12
+    },
+    {
+      "id": "bakim-onerileri",
+      "name": "Bakım Önerileri",
+      "count": 8
+    },
+    {
+      "id": "enerji-tasarrufu",
+      "name": "Enerji Tasarrufu",
+      "count": 6
+    },
+    {
+      "id": "acil-servis",
+      "name": "Acil Servis",
+      "count": 4
+    },
+    {
+      "id": "sektor-haberleri",
+      "name": "Sektör Haberleri",
+      "count": 5
+    }
+  ],
+  "haberler": [
+    {
+      "id": 1,
+      "slug": "akilli-tesisat-sistemleri-2024",
+      "title": "2024'te Akıllı Tesisat Sistemleri: Evinizi Teknoloji ile Donatın",
+      "excerpt": "Modern evlerde akıllı tesisat sistemleri nasıl çalışır? Su kaçağı tespitinden otomatik ısıtma kontrolüne kadar her şeyi öğrenin.",
+      "content": "Akıllı tesisat sistemleri, evinizin su, ısıtma ve kanalizasyon sistemlerini dijital olarak kontrol etmenizi sağlar. Bu sistemler sayesinde su kaçağı tespiti anında yapılır, ısıtma sistemleri otomatik olarak optimize edilir ve enerji tasarrufu sağlanır.\n\n2024 yılında öne çıkan akıllı tesisat teknolojileri arasında IoT sensörleri, akıllı vanalar ve mobil uygulama kontrolleri bulunuyor. Bu sistemler sayesinde evinizde olmasanız bile tesisat durumunu takip edebilir, olası sorunları önceden tespit edebilirsiniz.\n\nAkıllı tesisat sistemlerinin kurulumu profesyonel ekip gerektirir. Doğru kurulum yapılmadığında sistem verimli çalışmayabilir. Bu nedenle uzman tesisat firmalarından hizmet almanız önemlidir.",
+      "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "date": "15 Mart 2024",
+      "author": "Ahmet Yılmaz",
+      "category": "Tesisat Teknolojileri",
+      "categoryId": "tesisat-teknolojileri",
+      "readTime": "5 dk",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "slug": "kombi-bakimi-kis-oncesi",
+      "title": "Kış Öncesi Kombi Bakımı: Neden Önemli?",
+      "excerpt": "Kış aylarında sorunsuz ısınmak için kombi bakımınızı yaptırmayı unutmayın. İşte detaylı bakım rehberi.",
+      "content": "Kış aylarında evinizi sıcak tutmak için kombi bakımı kritik öneme sahiptir. Düzenli bakım yapılan kombiler daha verimli çalışır, daha az enerji tüketir ve daha uzun ömürlü olur.\n\nKombi bakımında yapılması gerekenler:\n- Filtre temizliği ve değişimi\n- Yanma odası temizliği\n- Basınç kontrolü\n- Su seviyesi kontrolü\n- Emniyet cihazlarının test edilmesi\n\nProfesyonel bakım hizmeti alarak kombinizin güvenli ve verimli çalışmasını sağlayabilirsiniz. Yıllık bakım maliyeti, olası arıza maliyetlerinden çok daha düşüktür.",
+      "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "date": "12 Mart 2024",
+      "author": "Fatma Demir",
+      "category": "Bakım Önerileri",
+      "categoryId": "bakim-onerileri",
+      "readTime": "4 dk",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "slug": "su-tasarrufu-ipuclari",
+      "title": "Su Tasarrufu İpuçları: Hem Çevre Hem Cebiniz Kazansın",
+      "excerpt": "Günlük hayatta uygulayabileceğiniz pratik su tasarrufu yöntemleri ile hem çevreyi koruyun hem de faturalarınızı düşürün.",
+      "content": "Su tasarrufu sadece çevre için değil, aile bütçesi için de önemlidir. Küçük değişikliklerle büyük farklar yaratabilirsiniz.\n\nSu tasarrufu için öneriler:\n- Musluklara su tasarruf başlığı takın\n- Duş sürenizi kısaltın\n- Bulaşık ve çamaşır makinelerini tam doldurun\n- Su kaçaklarını hemen tamir ettirin\n- Yağmur suyunu toplayın\n\nSu kaçağı tespiti için profesyonel hizmet alarak gizli kaçakları bulabilirsiniz. Küçük bir damla bile aylık faturanızı önemli ölçüde artırabilir.",
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "date": "10 Mart 2024",
+      "author": "Mehmet Kaya",
+      "category": "Enerji Tasarrufu",
+      "categoryId": "enerji-tasarrufu",
+      "readTime": "6 dk",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "slug": "acil-tesisat-sorunlari",
+      "title": "Acil Tesisat Sorunlarında Ne Yapmalısınız?",
+      "excerpt": "Su kesintisi, gider tıkanıklığı gibi acil tesisat sorunlarında panik yapmadan nasıl davranacağınızı öğrenin.",
+      "content": "Acil tesisat sorunları her zaman beklenmedik zamanlarda ortaya çıkar. Bu durumlarda sakin kalarak doğru adımları atmak önemlidir.\n\nAcil durumlarda yapılması gerekenler:\n- Ana su vanasını kapatın\n- Elektrikli cihazları kapatın\n- Profesyonel yardım çağırın\n- Geçici çözümler uygulayın\n\n7/24 acil servis hizmeti veren firmalar sayesinde en kısa sürede müdahale alabilirsiniz. Acil durumlar için önceden güvenilir bir tesisat firması ile iletişime geçmeniz önerilir.",
+      "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "date": "8 Mart 2024",
+      "author": "Ayşe Özkan",
+      "category": "Acil Servis",
+      "categoryId": "acil-servis",
+      "readTime": "3 dk",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "slug": "yeni-nesil-petek-sistemleri",
+      "title": "Yeni Nesil Petek Sistemleri: Konfor ve Tasarruf",
+      "excerpt": "Modern petek sistemleri ile evinizi daha verimli ısıtın. Yeni teknolojiler sayesinde enerji tasarrufu sağlayın.",
+      "content": "Petek sistemleri ev ısıtmasında en yaygın kullanılan yöntemlerden biridir. Yeni nesil petekler, geleneksel modellere göre çok daha verimli çalışır.\n\nModern petek sistemlerinin avantajları:\n- Daha hızlı ısınma\n- Eşit ısı dağılımı\n- Enerji tasarrufu\n- Kolay temizlik\n- Uzun ömür\n\nPetek seçiminde mekanın büyüklüğü, yalıtım durumu ve ısıtma ihtiyacı göz önünde bulundurulmalıdır. Profesyonel ekip ile doğru petek seçimi yaparak maksimum verim elde edebilirsiniz.",
+      "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "date": "5 Mart 2024",
+      "author": "Ali Yıldız",
+      "category": "Tesisat Teknolojileri",
+      "categoryId": "tesisat-teknolojileri",
+      "readTime": "7 dk",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "slug": "banyo-tesisati-yenileme",
+      "title": "Banyo Tesisatı Yenileme: Adım Adım Rehber",
+      "excerpt": "Banyo tesisatınızı yenilemek istiyorsanız, bu kapsamlı rehber size yardımcı olacak. Malzeme seçiminden montaja kadar her şey.",
+      "content": "Banyo tesisatı yenileme, evinizin değerini artıran önemli bir yatırımdır. Doğru planlama ile bu süreci sorunsuz tamamlayabilirsiniz.\n\nBanyo tesisatı yenileme adımları:\n- Mevcut durumun değerlendirilmesi\n- Yeni tasarım planlaması\n- Malzeme seçimi\n- Profesyonel montaj\n- Test ve kontrol\n\nYenileme sırasında modern teknolojileri tercih ederek gelecekteki ihtiyaçlarınızı karşılayabilirsiniz. Su tasarruflu armatürler ve akıllı sistemler ile banyonuz hem şık hem de fonksiyonel olur.",
+      "image": "https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "date": "3 Mart 2024",
+      "author": "Zeynep Arslan",
+      "category": "Bakım Önerileri",
+      "categoryId": "bakim-onerileri",
+      "readTime": "8 dk",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "slug": "yerden-isitma-avantajlari",
+      "title": "Yerden Kanalizasyon Tünel: Avantajları ve Dezavantajları",
+      "excerpt": "Yerden ısıtma sistemleri hakkında bilmeniz gereken her şey. Bu modern ısıtma yönteminin artıları ve eksileri.",
+      "content": "Yerden ısıtma sistemleri, geleneksel ısıtma yöntemlerine göre birçok avantaj sunar. Ancak her sistem gibi bazı dezavantajları da vardır.\n\nYerden ısıtma avantajları:\n- Eşit ısı dağılımı\n- Enerji tasarrufu\n- Görsel temizlik\n- Uzun ömür\n- Sağlıklı ısınma\n\nDezavantajları:\n- Yüksek kurulum maliyeti\n- Uzun ısınma süresi\n- Zor tamir\n\nYerden ısıtma sistemi kurulumu için mutlaka uzman ekip ile çalışın. Yanlış kurulum sistemin verimini düşürür ve ek maliyetlere neden olur.",
+      "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "date": "1 Mart 2024",
+      "author": "Can Özkan",
+      "category": "Enerji Tasarrufu",
+      "categoryId": "enerji-tasarrufu",
+      "readTime": "6 dk",
+      "featured": false
+    },
+    {
+      "id": 8,
+      "slug": "tesisat-malzemeleri-secimi",
+      "title": "Doğru Tesisat Malzemesi Seçimi: Kalite vs Fiyat",
+      "excerpt": "Tesisat malzemeleri seçerken kalite ve fiyat arasında denge kurun. Uzun vadede hangi seçenek daha karlı?",
+      "content": "Tesisat malzemeleri seçimi, evinizin tesisat sisteminin ömrünü ve performansını doğrudan etkiler. Doğru seçim yaparak gelecekteki maliyetleri azaltabilirsiniz.\n\nMalzeme seçiminde dikkat edilecek noktalar:\n- Malzeme kalitesi\n- Garanti süresi\n- Enerji verimliliği\n- Montaj kolaylığı\n- Uzun ömür\n\nUcuz malzemeler kısa vadede tasarruf sağlasa da, uzun vadede sık arıza ve yüksek tamir maliyetlerine neden olabilir. Kaliteli malzemeler yatırım olarak değerlendirilmeli ve uzun vadeli faydaları göz önünde bulundurulmalıdır.",
+      "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "date": "28 Şubat 2024",
+      "author": "Selin Yılmaz",
+      "category": "Sektör Haberleri",
+      "categoryId": "sektor-haberleri",
+      "readTime": "5 dk",
+      "featured": false
+    },
+    {
+      "id": 9,
+      "slug": "yaz-aylarinda-tesisat-bakimi",
+      "title": "Yaz Aylarında Tesisat Bakımı: Neden Önemli?",
+      "excerpt": "Yaz aylarında tesisat bakımı yaparak kış sorunlarını önleyin. İşte yaz bakımı için önemli ipuçları.",
+      "content": "Yaz ayları, tesisat sistemlerinizin bakımı için ideal zamandır. Kış aylarında yaşanabilecek sorunları önceden tespit edebilir ve giderebilirsiniz.\n\nYaz bakımında yapılması gerekenler:\n- Kanalizasyon kontrolü\n- Isıtma sistemi temizliği\n- Kanalizasyon kontrolü\n- Su basıncı ayarlama\n- Filtre temizliği\n\nYaz bakımı sayesinde kış aylarında ısıtma sisteminiz sorunsuz çalışır ve acil durumlarla karşılaşmazsınız. Düzenli bakım, sisteminizin ömrünü uzatır ve enerji tasarrufu sağlar.",
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "date": "25 Şubat 2024",
+      "author": "Burak Demir",
+      "category": "Bakım Önerileri",
+      "categoryId": "bakim-onerileri",
+      "readTime": "4 dk",
+      "featured": false
+    },
+    {
+      "id": 10,
+      "slug": "su-kacagi-tespit-yontemleri",
+      "title": "Su Kaçağı Tespit Yöntemleri: Modern Teknolojiler",
+      "excerpt": "Günümüzde su kaçağı tespiti nasıl yapılıyor? Termal kamera, ses dinleme ve diğer modern yöntemler hakkında bilgi alın.",
+      "content": "Su kaçağı tespiti, modern teknolojiler sayesinde artık çok daha kolay ve hassas yapılıyor. Gelişmiş cihazlar sayesinde gizli kaçaklar bile tespit edilebiliyor.\n\nModern tespit yöntemleri:\n- Termal kamera ile görüntüleme\n- Ses dinleme cihazları\n- Basınç testleri\n- Gaz tespit yöntemleri\n- Elektronik kaçak tespit cihazları\n\nBu yöntemler sayesinde su kaçağı tespiti yıkım yapmadan, minimum hasarla gerçekleştirilebiliyor. Profesyonel ekip ile çalışarak en doğru sonuçları alabilirsiniz.",
+      "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "date": "22 Şubat 2024",
+      "author": "Elif Kaya",
+      "category": "Tesisat Teknolojileri",
+      "categoryId": "tesisat-teknolojileri",
+      "readTime": "7 dk",
+      "featured": false
+    }
+  ]
+}

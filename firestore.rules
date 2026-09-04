@@ -1,0 +1,101 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return signedIn()
+        && exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+        && get(/databases/$(database)/documents/admins/$(request.auth.uid)).data.isAdmin == true;
+    }
+
+    function validText(value, maxLength) {
+      return value is string && value.size() > 0 && value.size() <= maxLength;
+    }
+
+    function isBootstrapAdmin(docId) {
+      return signedIn()
+        && request.auth.uid == docId
+        && request.auth.uid == 'kY008N15dobVvuvFqUxWPz2YsCF3'
+        && request.auth.token.email == 'admin@gumusogluelektrik.com';
+    }
+
+    // Blog yazıları: yalnızca aktif içerikler herkese açıktır.
+    match /haberler/{docId} {
+      allow read: if isAdmin() || resource.data.isActive == true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    // Galeri verileri: ziyaretçiler yalnızca aktif kayıtları okuyabilir.
+    match /gallery_categories/{docId} {
+      allow read: if isAdmin() || resource.data.isActive == true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    match /gallery_items/{docId} {
+      allow read: if isAdmin() || resource.data.isActive == true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    match /hizmet_bolgeleri/{docId} {
+      allow read: if isAdmin() || resource.data.isActive == true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    match /contact_info/{docId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    // Ziyaretçiler mesaj bırakabilir; gelen kutusunu yalnızca admin görebilir.
+    match /contact_messages/{docId} {
+      allow create: if request.resource.data.keys().hasOnly([
+          'name', 'email', 'phone', 'subject', 'message', 'priority',
+          'isRead', 'isArchived', 'status', 'tags', 'createdAt', 'updatedAt'
+        ])
+        && validText(request.resource.data.name, 100)
+        && validText(request.resource.data.email, 254)
+        && validText(request.resource.data.subject, 150)
+        && validText(request.resource.data.message, 3000)
+        && request.resource.data.isRead == false
+        && request.resource.data.isArchived == false
+        && request.resource.data.status == 'new'
+        && request.resource.data.tags is list
+        && request.resource.data.tags.size() == 0;
+      allow read, update, delete: if isAdmin();
+    }
+
+    match /newsletter_subscriptions/{docId} {
+      allow create: if request.resource.data.keys().hasOnly(['email', 'createdAt', 'isActive', 'source'])
+        && validText(request.resource.data.email, 254)
+        && request.resource.data.isActive == true;
+      allow read, update, delete: if isAdmin();
+    }
+
+    // Sayaç yalnızca birer artırılabilir; keyfi veri yazılamaz.
+    match /call_counter/{docId} {
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasOnly(['count', 'updatedAt'])
+        && request.resource.data.count == 1;
+      allow update: if request.resource.data.diff(resource.data).affectedKeys().hasOnly(['count', 'updatedAt'])
+        && request.resource.data.count == resource.data.count + 1;
+      allow delete: if isAdmin();
+    }
+
+    // Admin yetkisi Firebase Authentication UID'sine bağlıdır.
+    match /admins/{docId} {
+      allow read: if isAdmin() || (signedIn() && request.auth.uid == docId);
+      allow create: if isAdmin() || (isBootstrapAdmin(docId)
+        && request.resource.data.isAdmin == true
+        && request.resource.data.email == request.auth.token.email);
+      allow update, delete: if isAdmin();
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

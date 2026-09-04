@@ -62,18 +62,18 @@ const AdminSidebar = () => {
       {/* Mobile sidebar overlay */}
       <div className="relative z-40 lg:hidden">
         {isMobileOpen && (
-          <div className="fixed inset-0 bg-[rgba(21,20,18,0.82)] backdrop-blur-sm" />
+          <div className="fixed inset-0 bg-[#102a43]/60 backdrop-blur-sm" />
         )}
         
         {/* Mobile sidebar */}
-        <div className={`fixed inset-y-0 left-0 z-50 w-64 border-r border-[rgba(212,175,55,0.18)] bg-[rgba(21,20,18,0.94)] shadow-[0_28px_80px_rgba(0,0,0,0.34)] backdrop-blur transform transition-transform duration-300 ease-in-out ${
+        <div className={`fixed inset-y-0 left-0 z-50 w-72 border-r border-white/10 bg-[#102a43] shadow-[0_28px_80px_rgba(15,42,67,0.34)] transform transition-transform duration-300 ease-in-out ${
           isMobileOpen ? 'translate-x-0' : '-translate-x-full'
         }`}>
-          <div className="flex items-center justify-between h-16 px-4 border-b border-[rgba(212,175,55,0.18)]">
-            <h1 className="text-xl font-bold text-[var(--lale-ivory)]">Gümüşoğlu Elektrik</h1>
+          <div className="flex h-20 items-center justify-between border-b border-white/10 px-5">
+            <div><h1 className="text-base font-black tracking-[-.02em] text-white">Gümüşoğlu Elektrik</h1><p className="mt-1 text-[9px] font-bold uppercase tracking-[.2em] text-[#8fc9c6]">Yönetim paneli</p></div>
             <button
               onClick={toggleMobileMenu}
-              className="text-[rgba(251,250,246,0.62)] hover:text-[var(--lale-gold)]"
+              className="rounded-lg p-2 text-white/60 transition hover:bg-white/10 hover:text-white"
             >
               <FiX className="w-6 h-6" />
             </button>
@@ -81,16 +81,16 @@ const AdminSidebar = () => {
           
           {/* Admin Info - Mobile */}
           {user && (
-            <div className="mx-4 mt-4 rounded-2xl border border-[rgba(212,175,55,0.22)] bg-[rgba(212,175,55,0.10)] p-3">
+            <div className="mx-4 mt-5 rounded-2xl border border-white/10 bg-white/[.06] p-3">
               <div className="flex items-center">
-                <div className="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#347bb7]">
                   <FiUser className="w-4 h-4 text-white" />
                 </div>
                 <div className="ml-3">
-                  <p className="text-sm font-medium text-[var(--lale-ivory)]">
+                  <p className="max-w-[175px] truncate text-sm font-bold text-white">
                     {user.displayName || user.email}
                   </p>
-                  <p className="text-xs text-[rgba(251,250,246,0.60)]">
+                  <p className="mt-0.5 text-[10px] text-white/50">
                     {user.isStaticAdmin ? 'Sunucu Yöneticisi' : 'Firebase Yöneticisi'}
                   </p>
                 </div>
@@ -99,7 +99,8 @@ const AdminSidebar = () => {
           )}
 
           <nav className="mt-6 px-4">
-            <div className="space-y-2">
+            <p className="mb-3 px-3 text-[9px] font-bold uppercase tracking-[.2em] text-white/35">Menü</p>
+            <div className="space-y-1.5">
               {navigation.map((item) => {
                 const IconComponent = item.icon;
                 return (
@@ -107,10 +108,10 @@ const AdminSidebar = () => {
                     key={item.name}
                     href={item.href}
                     onClick={() => setIsMobileOpen(false)}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-lg text-left transition-colors ${
+                    className={`flex items-center gap-3 rounded-xl px-4 py-3 text-left transition-all ${
                       pathname === item.href
-                        ? 'border border-[rgba(212,175,55,0.26)] bg-[rgba(212,175,55,0.10)] text-[var(--lale-gold)]'
-                        : 'text-[rgba(251,250,246,0.68)] hover:bg-[rgba(251,250,246,0.05)]'
+                        ? 'bg-[#347bb7] text-white shadow-[0_10px_24px_rgba(52,123,183,.3)]'
+                        : 'text-white/65 hover:bg-white/[.07] hover:text-white'
                     }`}
                   >
                     <IconComponent className="w-5 h-5" />
@@ -121,10 +122,10 @@ const AdminSidebar = () => {
             </div>
             
             {/* Logout button */}
-            <div className="mt-8 pt-4 border-t border-[rgba(212,175,55,0.18)]">
+            <div className="mt-8 border-t border-white/10 pt-4">
               <button
                 onClick={handleLogout}
-                className="w-full flex items-center gap-3 px-4 py-3 text-red-300 hover:bg-[rgba(239,68,68,0.10)] rounded-lg transition-colors"
+                className="flex w-full items-center gap-3 rounded-xl px-4 py-3 text-rose-300 transition-colors hover:bg-rose-400/10"
               >
                 <FiLogOut className="w-5 h-5" />
                 <span className="text-sm font-medium">Çıkış Yap</span>
@@ -136,23 +137,23 @@ const AdminSidebar = () => {
 
       {/* Desktop sidebar */}
       <div className="hidden lg:flex lg:flex-shrink-0">
-        <div className="w-64 border-r border-[rgba(212,175,55,0.18)] bg-[rgba(21,20,18,0.94)] shadow-[0_28px_80px_rgba(0,0,0,0.34)] backdrop-blur">
-          <div className="flex items-center justify-center h-16 px-4 border-b border-[rgba(212,175,55,0.18)]">
-            <h1 className="text-xl font-bold text-[var(--lale-ivory)]">Gümüşoğlu Elektrik</h1>
+        <div className="flex h-screen w-72 flex-col border-r border-[#153957] bg-[#102a43] shadow-[16px_0_40px_rgba(23,59,89,.08)]">
+          <div className="flex h-24 items-center border-b border-white/10 px-7">
+            <div><h1 className="text-lg font-black tracking-[-.025em] text-white">Gümüşoğlu Elektrik</h1><p className="mt-1.5 text-[9px] font-bold uppercase tracking-[.22em] text-[#8fc9c6]">Yönetim paneli</p></div>
           </div>
           
           {/* Admin Info - Desktop */}
           {user && (
-            <div className="mx-4 mt-4 rounded-2xl border border-[rgba(212,175,55,0.22)] bg-[rgba(212,175,55,0.10)] p-3">
+            <div className="mx-5 mt-6 rounded-2xl border border-white/10 bg-white/[.06] p-4">
               <div className="flex items-center">
-                <div className="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#347bb7] shadow-[0_8px_20px_rgba(52,123,183,.3)]">
                   <FiUser className="w-4 h-4 text-white" />
                 </div>
                 <div className="ml-3">
-                  <p className="text-sm font-medium text-[var(--lale-ivory)]">
+                  <p className="max-w-[170px] truncate text-sm font-bold text-white">
                     {user.displayName || user.email}
                   </p>
-                  <p className="text-xs text-[rgba(251,250,246,0.60)]">
+                  <p className="mt-0.5 text-[10px] text-white/50">
                     {user.isStaticAdmin ? 'Sunucu Yöneticisi' : 'Firebase Yöneticisi'}
                   </p>
                 </div>
@@ -160,18 +161,19 @@ const AdminSidebar = () => {
             </div>
           )}
 
-          <nav className="mt-6 px-4">
-            <div className="space-y-2">
+          <nav className="mt-7 flex flex-1 flex-col px-5">
+            <p className="mb-3 px-3 text-[9px] font-bold uppercase tracking-[.2em] text-white/35">Menü</p>
+            <div className="space-y-1.5">
               {navigation.map((item) => {
                 const IconComponent = item.icon;
                 return (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-lg text-left transition-colors ${
+                    className={`flex items-center gap-3 rounded-xl px-4 py-3.5 text-left transition-all ${
                       pathname === item.href
-                        ? 'border border-[rgba(212,175,55,0.26)] bg-[rgba(212,175,55,0.10)] text-[var(--lale-gold)]'
-                        : 'text-[rgba(251,250,246,0.68)] hover:bg-[rgba(251,250,246,0.05)]'
+                        ? 'bg-[#347bb7] text-white shadow-[0_10px_24px_rgba(52,123,183,.3)]'
+                        : 'text-white/65 hover:bg-white/[.07] hover:text-white'
                     }`}
                   >
                     <IconComponent className="w-5 h-5" />
@@ -182,10 +184,10 @@ const AdminSidebar = () => {
             </div>
             
             {/* Logout button */}
-            <div className="mt-8 pt-4 border-t border-[rgba(212,175,55,0.18)]">
+            <div className="mt-auto border-t border-white/10 pb-6 pt-4">
               <button
                 onClick={handleLogout}
-                className="w-full flex items-center gap-3 px-4 py-3 text-red-300 hover:bg-[rgba(239,68,68,0.10)] rounded-lg transition-colors"
+                className="flex w-full items-center gap-3 rounded-xl px-4 py-3 text-rose-300 transition-colors hover:bg-rose-400/10"
               >
                 <FiLogOut className="w-5 h-5" />
                 <span className="text-sm font-medium">Çıkış Yap</span>
@@ -199,9 +201,9 @@ const AdminSidebar = () => {
       <div className="lg:hidden mobile-menu-container">
         <button
           onClick={toggleMobileMenu}
-          className="fixed top-4 left-4 z-50 rounded-xl border border-[rgba(212,175,55,0.22)] bg-[rgba(21,20,18,0.9)] p-2 shadow-[0_18px_48px_rgba(0,0,0,0.28)] backdrop-blur"
+          className="fixed left-4 top-4 z-50 rounded-xl border border-white/10 bg-[#102a43] p-2.5 shadow-[0_18px_48px_rgba(15,42,67,.24)]"
         >
-          <FiMenu className="w-6 h-6 text-[var(--lale-gold)]" />
+          <FiMenu className="h-5 w-5 text-white" />
         </button>
       </div>
     </>

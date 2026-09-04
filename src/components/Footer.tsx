@@ -67,7 +67,7 @@ export default function Footer() {
 
         <div className="flex flex-col gap-2 border-t border-white/10 py-5 pr-20 text-[10px] text-white/45 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 Gümüşoğlu Elektrik. Tüm hakları saklıdır.</p>
-          <p className="sm:pr-4">1974&apos;ten bugüne güvenle.</p>
+          <p className="sm:pr-4">Created by <span className="font-bold text-[#ff5a57]">Alceix Group Limited</span></p>
         </div>
       </div>
     </footer>

@@ -1,15 +1,74 @@
 'use client';
+
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { FiFacebook, FiInstagram, FiMapPin, FiPhone } from 'react-icons/fi';
+import { FiArrowUpRight, FiFacebook, FiInstagram, FiMapPin, FiPhone } from 'react-icons/fi';
 import BrandMark from './BrandMark';
 
-export default function Footer(){
-  const p=usePathname(); if(p?.startsWith('/admin'))return null;
-  return <footer className="border-t border-white/15 bg-[#285f8f] px-5 text-white sm:px-8 lg:px-14"><div className="mx-auto max-w-[1500px]">
-    <div className="grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-[1.2fr_.8fr_.8fr]">
-      <div><BrandMark/><p className="mt-5 max-w-md text-sm leading-7 text-white/65">1974&apos;ten bu yana Akkuş ve çevresine güvenli, kesintisiz ve kaliteli enerji çözümleri sunuyoruz.</p></div>
-      <div><h3 className="footer-title">Hızlı erişim</h3><div className="mt-5 grid gap-3 text-sm text-white/70"><a href="/hizmetlerimiz">Hizmetlerimiz</a><a href="/hakkimizda">Hakkımızda</a><a href="/galeri">Galeri</a><a href="/blog">Blog</a><a href="/iletisim">İletişim</a></div></div>
-      <div><h3 className="footer-title">Bize ulaşın</h3><a href="tel:+905384682399" className="mt-5 flex items-center gap-3 font-black"><FiPhone/>0538 468 23 99</a><p className="mt-4 flex gap-3 text-sm leading-6 text-white/65"><FiMapPin className="mt-1 shrink-0"/>İstiklal Cad. Merkez Mah.<br/>No: 43/A Akkuş / Ordu</p><div className="mt-5 flex gap-2"><a className="social" aria-label="Instagram" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/gumusogluelektrik?igsi=bmMyYTVqZ2E4aW1u"><FiInstagram/></a><a className="social" aria-label="Facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/share/19JMbqnJZk/"><FiFacebook/></a></div></div>
-    </div><div className="flex flex-col gap-2 border-t border-white/15 py-5 text-[10px] text-white/50 sm:flex-row sm:justify-between"><p>© 2026 Gümüşoğlu Elektrik. Tüm hakları saklıdır.</p><p>1974&apos;ten bugüne güvenle.</p></div>
-  </div></footer>
+const footerLinks = [
+  { href: '/hizmetlerimiz', label: 'Hizmetlerimiz' },
+  { href: '/hakkimizda', label: 'Hakkımızda' },
+  { href: '/galeri', label: 'Galeri' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/iletisim', label: 'İletişim' },
+];
+
+export default function Footer() {
+  const pathname = usePathname();
+  if (pathname?.startsWith('/admin')) return null;
+
+  return (
+    <footer className="relative overflow-hidden border-t-4 border-[#e52220] bg-[#173b59] px-5 text-white sm:px-8 lg:px-14">
+      <div className="pointer-events-none absolute -right-32 -top-40 h-96 w-96 rounded-full bg-[#347bb7]/20 blur-3xl" />
+      <div className="relative mx-auto max-w-[1500px]">
+        <div className="grid gap-12 py-14 md:grid-cols-2 lg:grid-cols-[1.35fr_.65fr_.9fr] lg:gap-20 lg:py-16">
+          <div>
+            <div className="w-fit [&_img]:h-12 [&_img]:drop-shadow-[0_1px_1px_rgba(255,255,255,.45)] sm:[&_img]:h-14">
+              <BrandMark dark />
+            </div>
+            <p className="mt-6 max-w-lg text-sm leading-7 text-white/70">1974&apos;ten bu yana Akkuş ve çevresine güvenli, kesintisiz ve kaliteli enerji çözümleri sunuyoruz.</p>
+            <div className="mt-6 flex items-center gap-3 text-[10px] font-black uppercase tracking-[.18em] text-white/45">
+              <span className="h-px w-8 bg-[#e52220]" />
+              Gerçek Elektrik&apos;ten bugüne
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-[10px] font-black uppercase tracking-[.2em] text-[#8fc5eb]">Hızlı erişim</h3>
+            <nav className="mt-6 grid gap-3" aria-label="Footer menüsü">
+              {footerLinks.map((link) => (
+                <Link key={link.href} href={link.href} className="group flex w-fit items-center gap-2 text-sm font-semibold text-white/70 transition hover:text-white">
+                  {link.label}
+                  <FiArrowUpRight className="h-3.5 w-3.5 opacity-0 transition group-hover:opacity-100" />
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          <div>
+            <h3 className="text-[10px] font-black uppercase tracking-[.2em] text-[#8fc5eb]">Bize ulaşın</h3>
+            <div className="mt-6 space-y-5">
+              <a href="tel:+905384682399" className="flex items-center gap-3 font-black transition hover:text-[#8fc5eb]">
+                <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 text-[#8fc5eb]"><FiPhone /></span>
+                0538 468 23 99
+              </a>
+              <p className="flex items-start gap-3 text-sm leading-7 text-white/65">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/10 text-[#8fc5eb]"><FiMapPin /></span>
+                <span>İstiklal Cad. Merkez Mah.<br />No: 43/A Akkuş / Ordu</span>
+              </p>
+            </div>
+            <div className="mt-6 flex gap-2">
+              <a className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 text-white/75 transition hover:border-white hover:bg-white hover:text-[#173b59]" aria-label="Instagram" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/gumusogluelektrik?igsi=bmMyYTVqZ2E4aW1u"><FiInstagram /></a>
+              <a className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 text-white/75 transition hover:border-white hover:bg-white hover:text-[#173b59]" aria-label="Facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/share/19JMbqnJZk/"><FiFacebook /></a>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-2 border-t border-white/10 py-5 pr-20 text-[10px] text-white/45 sm:flex-row sm:items-center sm:justify-between">
+          <p>© 2026 Gümüşoğlu Elektrik. Tüm hakları saklıdır.</p>
+          <p className="sm:pr-4">1974&apos;ten bugüne güvenle.</p>
+        </div>
+      </div>
+    </footer>
+  );
 }

@@ -14,7 +14,7 @@ const TestComponent = () => {
 
       {/* Responsive Grid Demo */}
       <div className="responsive-grid mb-8">
-        <div className="bg-blue-100 p-4 rounded-lg text-center">
+        <div className="bg-red-100 p-4 rounded-lg text-center">
           <div className="text-2xl mb-2">📱</div>
           <h3 className="font-semibold text-sm sm:text-base">Mobil</h3>
           <p className="text-xs sm:text-sm text-gray-600">Küçük ekranlar için optimize</p>
@@ -60,7 +60,7 @@ const TestComponent = () => {
 
       {/* Responsive Visibility */}
       <div className="mt-8 text-center">
-        <div className="hide-mobile bg-blue-100 p-4 rounded-lg mb-4">
+        <div className="hide-mobile bg-red-100 p-4 rounded-lg mb-4">
           <p className="text-sm">Bu sadece mobil olmayan cihazlarda görünür</p>
         </div>
         <div className="hide-desktop bg-green-100 p-4 rounded-lg mb-4">

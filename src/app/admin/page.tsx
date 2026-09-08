@@ -286,20 +286,20 @@ const AdminDashboard = () => {
     switch (type) {
       case 'news':
         return (
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#e8f2fa]">
-            <FiFileText className="h-4 w-4 text-[#347bb7]" />
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#fff0f1]">
+            <FiFileText className="h-4 w-4 text-[#e30613]" />
           </div>
         );
       case 'gallery':
         return (
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#e7f5f4]">
-            <FiImage className="h-4 w-4 text-[#378a8a]" />
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#fff0f1]">
+            <FiImage className="h-4 w-4 text-[#c8101b]" />
           </div>
         );
       case 'message':
         return (
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#edf0f8]">
-            <FiMessageSquare className="h-4 w-4 text-[#596b91]" />
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#f5eeee]">
+            <FiMessageSquare className="h-4 w-4 text-[#66666b]" />
           </div>
         );
       default:
@@ -316,8 +316,8 @@ const AdminDashboard = () => {
       <div className="p-6 pt-24 lg:p-10">
         <div className="flex items-center justify-center h-64">
           <div className="text-center">
-            <div className="mx-auto mb-4 h-11 w-11 animate-spin rounded-full border-4 border-[#347bb7] border-t-transparent"></div>
-            <p className="text-sm font-semibold text-[#667386]">Dashboard yükleniyor...</p>
+            <div className="mx-auto mb-4 h-11 w-11 animate-spin rounded-full border-4 border-[#e30613] border-t-transparent"></div>
+            <p className="text-sm font-semibold text-[#68686d]">Dashboard yükleniyor...</p>
           </div>
         </div>
       </div>
@@ -330,16 +330,16 @@ const AdminDashboard = () => {
       <div className="mb-7">
         <div className="mb-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="mb-2 text-[10px] font-black uppercase tracking-[.2em] text-[#45a0a0]">Yönetim paneli</p>
-            <h1 className="text-3xl font-black tracking-[-.04em] text-[#173b59]">Dashboard</h1>
-            <p className="mt-2 text-sm text-[#718094]">Site içeriğinizi ve verilerinizi tek yerden yönetin.</p>
+            <p className="mb-2 text-[10px] font-black uppercase tracking-[.2em] text-[#ef1b18]">Yönetim paneli</p>
+            <h1 className="text-3xl font-black tracking-[-.04em] text-[#202022]">Dashboard</h1>
+            <p className="mt-2 text-sm text-[#747479]">Site içeriğinizi ve verilerinizi tek yerden yönetin.</p>
           </div>
           
           {/* Firebase yöneticileri yeni Firebase hesabı oluşturabilir. */}
           {user?.isDatabaseAdmin && (
             <button
               onClick={() => setShowCreateAdminModal(true)}
-              className="flex items-center justify-center gap-2 rounded-xl bg-[#347bb7] px-5 py-3 text-sm font-bold text-white shadow-[0_12px_28px_rgba(52,123,183,.2)] transition hover:-translate-y-0.5 hover:bg-[#286796]"
+              className="flex items-center justify-center gap-2 rounded-xl bg-[#e30613] px-5 py-3 text-sm font-bold text-white shadow-[0_12px_28px_rgba(227,6,19,.2)] transition hover:-translate-y-0.5 hover:bg-[#b90913]"
             >
               <FiUsers className="w-4 h-4" />
               Yeni Admin Oluştur
@@ -349,17 +349,17 @@ const AdminDashboard = () => {
 
         {/* Admin Bilgi Kartı */}
         {user && (
-          <div className="relative overflow-hidden rounded-3xl border border-[#dce8f1] bg-[linear-gradient(120deg,#ffffff_0%,#f0f7fb_55%,#e8f5f4_100%)] p-5 shadow-[0_16px_44px_rgba(23,59,89,.07)] sm:p-6">
-            <div className="absolute -right-16 -top-20 h-48 w-48 rounded-full bg-[#347bb7]/[.07]" />
+          <div className="relative overflow-hidden rounded-3xl border border-[#eadfe0] bg-[linear-gradient(120deg,#ffffff_0%,#fff7f7_55%,#fff3f3_100%)] p-5 shadow-[0_16px_44px_rgba(32,32,34,.07)] sm:p-6">
+            <div className="absolute -right-16 -top-20 h-48 w-48 rounded-full bg-[#e30613]/[.07]" />
             <div className="flex items-center">
-              <div className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#173b59] shadow-[0_12px_28px_rgba(23,59,89,.18)]">
+              <div className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#202022] shadow-[0_12px_28px_rgba(32,32,34,.18)]">
                 <FiUsers className="h-5 w-5 text-white" />
               </div>
               <div className="ml-4">
-                <h3 className="text-base font-extrabold text-[#173b59] sm:text-lg">
+                <h3 className="text-base font-extrabold text-[#202022] sm:text-lg">
                   Hoş geldiniz, {user.displayName || user.email}
                 </h3>
-                <p className="mt-1 text-xs text-[#718094] sm:text-sm">
+                <p className="mt-1 text-xs text-[#747479] sm:text-sm">
                   {user.isStaticAdmin ? 'Sunucu Yöneticisi' : 'Firebase Yöneticisi'} • {user.email}
                 </p>
               </div>
@@ -370,67 +370,67 @@ const AdminDashboard = () => {
 
       {/* Stats Cards */}
       <div className="mb-7 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-5">
-        <div className="rounded-2xl border border-[#dfe8ef] bg-white p-5 shadow-[0_10px_30px_rgba(23,59,89,.05)]">
+        <div className="rounded-2xl border border-[#e9e2e2] bg-white p-5 shadow-[0_10px_30px_rgba(32,32,34,.05)]">
           <div className="flex items-center">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#e7f5f4]">
-              <FiImage className="h-5 w-5 text-[#378a8a]" />
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#fff0f1]">
+              <FiImage className="h-5 w-5 text-[#c8101b]" />
             </div>
             <div className="ml-4">
-              <p className="text-xs font-bold text-[#667386]">Toplam Galeri</p>
-              <p className="mt-1 text-2xl font-black text-[#173b59]">{stats.totalGalleryItems}</p>
-              <p className="mt-1 text-[11px] text-[#8b98a7]">{stats.featuredGalleryItems} öne çıkan</p>
+              <p className="text-xs font-bold text-[#68686d]">Toplam Galeri</p>
+              <p className="mt-1 text-2xl font-black text-[#202022]">{stats.totalGalleryItems}</p>
+              <p className="mt-1 text-[11px] text-[#909095]">{stats.featuredGalleryItems} öne çıkan</p>
             </div>
           </div>
         </div>
 
-        <div className="rounded-2xl border border-[#dfe8ef] bg-white p-5 shadow-[0_10px_30px_rgba(23,59,89,.05)]">
+        <div className="rounded-2xl border border-[#e9e2e2] bg-white p-5 shadow-[0_10px_30px_rgba(32,32,34,.05)]">
           <div className="flex items-center">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#e8f2fa]">
-              <FiFileText className="h-5 w-5 text-[#347bb7]" />
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#fff0f1]">
+              <FiFileText className="h-5 w-5 text-[#e30613]" />
             </div>
             <div className="ml-4">
-              <p className="text-xs font-bold text-[#667386]">Toplam Haber</p>
-              <p className="mt-1 text-2xl font-black text-[#173b59]">{stats.totalNews}</p>
-              <p className="mt-1 text-[11px] text-[#8b98a7]">{stats.activeNews} aktif, {stats.featuredNews} öne çıkan</p>
+              <p className="text-xs font-bold text-[#68686d]">Toplam Haber</p>
+              <p className="mt-1 text-2xl font-black text-[#202022]">{stats.totalNews}</p>
+              <p className="mt-1 text-[11px] text-[#909095]">{stats.activeNews} aktif, {stats.featuredNews} öne çıkan</p>
             </div>
           </div>
         </div>
 
-        <div className="rounded-2xl border border-[#dfe8ef] bg-white p-5 shadow-[0_10px_30px_rgba(23,59,89,.05)]">
+        <div className="rounded-2xl border border-[#e9e2e2] bg-white p-5 shadow-[0_10px_30px_rgba(32,32,34,.05)]">
           <div className="flex items-center">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#edf0f8]">
-              <FiFolder className="h-5 w-5 text-[#596b91]" />
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#f5eeee]">
+              <FiFolder className="h-5 w-5 text-[#66666b]" />
             </div>
             <div className="ml-4">
-              <p className="text-xs font-bold text-[#667386]">Kategoriler</p>
-              <p className="mt-1 text-2xl font-black text-[#173b59]">{stats.totalCategories}</p>
-              <p className="mt-1 text-[11px] text-[#8b98a7]">{stats.activeCategories} aktif</p>
+              <p className="text-xs font-bold text-[#68686d]">Kategoriler</p>
+              <p className="mt-1 text-2xl font-black text-[#202022]">{stats.totalCategories}</p>
+              <p className="mt-1 text-[11px] text-[#909095]">{stats.activeCategories} aktif</p>
             </div>
           </div>
         </div>
 
-        <div className="rounded-2xl border border-[#dfe8ef] bg-white p-5 shadow-[0_10px_30px_rgba(23,59,89,.05)]">
+        <div className="rounded-2xl border border-[#e9e2e2] bg-white p-5 shadow-[0_10px_30px_rgba(32,32,34,.05)]">
           <div className="flex items-center">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eaf4f8]">
-              <FiMessageSquare className="h-5 w-5 text-[#2f779b]" />
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#f6f0f0]">
+              <FiMessageSquare className="h-5 w-5 text-[#c8101b]" />
             </div>
             <div className="ml-4">
-              <p className="text-xs font-bold text-[#667386]">Mesajlar</p>
-              <p className="mt-1 text-2xl font-black text-[#173b59]">{stats.totalMessages}</p>
-              <p className="mt-1 text-[11px] text-[#8b98a7]">Toplam iletişim</p>
+              <p className="text-xs font-bold text-[#68686d]">Mesajlar</p>
+              <p className="mt-1 text-2xl font-black text-[#202022]">{stats.totalMessages}</p>
+              <p className="mt-1 text-[11px] text-[#909095]">Toplam iletişim</p>
             </div>
           </div>
         </div>
 
-        <div className="rounded-2xl border border-[#dfe8ef] bg-white p-5 shadow-[0_10px_30px_rgba(23,59,89,.05)] sm:col-span-2 xl:col-span-1">
+        <div className="rounded-2xl border border-[#e9e2e2] bg-white p-5 shadow-[0_10px_30px_rgba(32,32,34,.05)] sm:col-span-2 xl:col-span-1">
           <div className="flex items-center">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eef3f7]">
-              <FiClock className="h-5 w-5 text-[#536c82]" />
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#f5f5f5]">
+              <FiClock className="h-5 w-5 text-[#5d5d62]" />
             </div>
             <div className="ml-4">
-              <p className="text-xs font-bold text-[#667386]">Telefon Aramaları</p>
-              <p className="mt-1 text-2xl font-black text-[#173b59]">{stats.callCounter}</p>
-              <p className="mt-1 text-[11px] text-[#8b98a7]">Toplam arama</p>
+              <p className="text-xs font-bold text-[#68686d]">Telefon Aramaları</p>
+              <p className="mt-1 text-2xl font-black text-[#202022]">{stats.callCounter}</p>
+              <p className="mt-1 text-[11px] text-[#909095]">Toplam arama</p>
             </div>
           </div>
         </div>
@@ -439,10 +439,10 @@ const AdminDashboard = () => {
       {/* Management Cards */}
       <div className="mb-8 grid grid-cols-1 gap-5 xl:grid-cols-2">
         {/* Gallery Management */}
-        <div className="rounded-3xl border border-[#dfe8ef] bg-white p-6 shadow-[0_10px_30px_rgba(23,59,89,.05)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_40px_rgba(23,59,89,.09)]">
+        <div className="rounded-3xl border border-[#e9e2e2] bg-white p-6 shadow-[0_10px_30px_rgba(32,32,34,.05)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_40px_rgba(32,32,34,.09)]">
           <div className="flex items-center mb-4">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#e7f5f4]">
-              <FiImage className="h-5 w-5 text-[#378a8a]" />
+            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#fff0f1]">
+              <FiImage className="h-5 w-5 text-[#c8101b]" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 ml-3">Galeri Yönetimi</h3>
           </div>
@@ -452,13 +452,13 @@ const AdminDashboard = () => {
           <div className="flex gap-2">
             <Link
               href="/admin/galeri"
-              className="rounded-xl bg-[#347bb7] px-4 py-2.5 text-sm font-bold text-white transition hover:bg-[#286796]"
+              className="rounded-xl bg-[#e30613] px-4 py-2.5 text-sm font-bold text-white transition hover:bg-[#b90913]"
             >
               Galeri Yönet
             </Link>
             <Link
               href="/admin/galeri"
-              className="flex items-center gap-2 rounded-xl border border-[#d4e0e8] px-4 py-2.5 text-sm font-bold text-[#536477] transition hover:bg-[#f4f8fb]"
+              className="flex items-center gap-2 rounded-xl border border-[#e4dada] px-4 py-2.5 text-sm font-bold text-[#59595e] transition hover:bg-[#fafafa]"
             >
               <FiPlus className="w-4 h-4" />
               Yeni Resim Ekle
@@ -467,10 +467,10 @@ const AdminDashboard = () => {
         </div>
 
         {/* News Management */}
-        <div className="rounded-3xl border border-[#dfe8ef] bg-white p-6 shadow-[0_10px_30px_rgba(23,59,89,.05)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_40px_rgba(23,59,89,.09)]">
+        <div className="rounded-3xl border border-[#e9e2e2] bg-white p-6 shadow-[0_10px_30px_rgba(32,32,34,.05)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_40px_rgba(32,32,34,.09)]">
           <div className="flex items-center mb-4">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#e8f2fa]">
-              <FiFileText className="h-5 w-5 text-[#347bb7]" />
+            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#fff0f1]">
+              <FiFileText className="h-5 w-5 text-[#e30613]" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 ml-3">Haber Yönetimi</h3>
           </div>
@@ -480,13 +480,13 @@ const AdminDashboard = () => {
           <div className="flex gap-2">
             <Link
               href="/admin/haberler"
-              className="rounded-xl bg-[#347bb7] px-4 py-2.5 text-sm font-bold text-white transition hover:bg-[#286796]"
+              className="rounded-xl bg-[#e30613] px-4 py-2.5 text-sm font-bold text-white transition hover:bg-[#b90913]"
             >
               Haber Yönet
             </Link>
             <Link
               href="/admin/haberler"
-              className="flex items-center gap-2 rounded-xl border border-[#d4e0e8] px-4 py-2.5 text-sm font-bold text-[#536477] transition hover:bg-[#f4f8fb]"
+              className="flex items-center gap-2 rounded-xl border border-[#e4dada] px-4 py-2.5 text-sm font-bold text-[#59595e] transition hover:bg-[#fafafa]"
             >
               <FiPlus className="w-4 h-4" />
               Yeni Haber Ekle
@@ -498,16 +498,16 @@ const AdminDashboard = () => {
       {/* Recent Activity */}
       <div className="mt-8">
         <div className="flex items-center justify-between mb-4">
-          <h3 className="text-lg font-extrabold text-[#173b59]">Son Aktiviteler</h3>
+          <h3 className="text-lg font-extrabold text-[#202022]">Son Aktiviteler</h3>
           <button 
             onClick={fetchDashboardData}
-            className="flex items-center gap-2 text-sm font-bold text-[#347bb7] transition hover:text-[#286796]"
+            className="flex items-center gap-2 text-sm font-bold text-[#e30613] transition hover:text-[#b90913]"
           >
             <FiRefreshCw className="w-4 h-4" />
             Yenile
           </button>
         </div>
-        <div className="rounded-3xl border border-[#dfe8ef] bg-white shadow-[0_10px_30px_rgba(23,59,89,.05)]">
+        <div className="rounded-3xl border border-[#e9e2e2] bg-white shadow-[0_10px_30px_rgba(32,32,34,.05)]">
           <div className="p-6">
             {recentActivities.length > 0 ? (
               <div className="space-y-4">

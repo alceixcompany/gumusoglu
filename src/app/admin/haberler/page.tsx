@@ -291,7 +291,7 @@ const AdminNews = () => {
                         <div className="flex items-center gap-2">
                           <button 
                             onClick={() => handleEdit(haber)}
-                            className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded text-sm font-medium transition-colors"
+                            className="bg-red-600 hover:bg-red-700 text-white px-3 py-1.5 rounded text-sm font-medium transition-colors"
                           >
                             Düzenle
                           </button>

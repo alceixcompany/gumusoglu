@@ -16,7 +16,7 @@ const AdminLayoutContent: React.FC<AdminLayoutContentProps> = ({ children }) => 
   }
 
   return (
-    <div className="admin-theme flex h-screen bg-[#f3f7fb] text-[#173b59]">
+    <div className="admin-theme flex h-screen bg-[#f7f7f7] text-[#202022]">
       <AdminSidebar />
       <div className="flex-1 flex flex-col overflow-hidden lg:ml-0">
         <main className="relative flex-1 overflow-y-auto focus:outline-none">

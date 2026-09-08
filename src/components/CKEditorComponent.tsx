@@ -358,7 +358,7 @@ const CKEditorComponent: React.FC<CKEditorComponentProps> = ({
                   value={mapsUrl}
                   onChange={(e) => setMapsUrl(e.target.value)}
                   placeholder="iframe src URL'sini veya tam iframe HTML'ini yapıştırın..."
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 h-20 resize-none"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 h-20 resize-none"
                 />
                 <p className="text-xs text-gray-500 mt-1">
                   <strong>Desteklenen Formatlar:</strong><br/>
@@ -383,7 +383,7 @@ const CKEditorComponent: React.FC<CKEditorComponentProps> = ({
                   type="button"
                   onClick={handleAddMaps}
                   disabled={!mapsUrl.trim()}
-                  className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white rounded-lg transition-colors disabled:cursor-not-allowed"
+                  className="flex-1 px-4 py-2 bg-red-600 hover:bg-red-700 disabled:bg-red-400 text-white rounded-lg transition-colors disabled:cursor-not-allowed"
                 >
                   Ekle
                 </button>

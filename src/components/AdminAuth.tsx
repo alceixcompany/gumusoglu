@@ -31,10 +31,10 @@ const AdminAuth = ({ children }: { children: React.ReactNode }) => {
   // Show loading spinner while checking authentication
   if (loading) {
     return (
-      <div className="admin-theme flex min-h-screen items-center justify-center bg-[#f3f7fb]">
+      <div className="admin-theme flex min-h-screen items-center justify-center bg-[#f7f7f7]">
         <div className="text-center">
-          <div className="mx-auto mb-4 h-12 w-12 animate-spin rounded-full border-4 border-[#347bb7] border-t-transparent"></div>
-          <p className="text-sm font-semibold text-[#667386]">Yükleniyor...</p>
+          <div className="mx-auto mb-4 h-12 w-12 animate-spin rounded-full border-4 border-[#e30613] border-t-transparent"></div>
+          <p className="text-sm font-semibold text-[#68686d]">Yükleniyor...</p>
         </div>
       </div>
     );

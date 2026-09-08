@@ -51,13 +51,13 @@ const CreateAdminModal: React.FC<CreateAdminModalProps> = ({ isOpen, onClose }) 
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#102a43]/55 p-4 backdrop-blur-sm">
-      <div className="w-full max-w-md rounded-3xl border border-[#dce6ed] bg-white shadow-[0_30px_80px_rgba(15,42,67,.24)]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#171719]/55 p-4 backdrop-blur-sm">
+      <div className="w-full max-w-md rounded-3xl border border-[#e8dfe0] bg-white shadow-[0_30px_80px_rgba(15,42,67,.24)]">
         <div className="flex items-center justify-between border-b border-[#e4ebf0] p-6">
-          <div><p className="text-[9px] font-black uppercase tracking-[.18em] text-[#45a0a0]">Yetkilendirme</p><h3 className="mt-1 text-xl font-black text-[#173b59]">Yeni Admin Oluştur</h3></div>
+          <div><p className="text-[9px] font-black uppercase tracking-[.18em] text-[#ef1b18]">Yetkilendirme</p><h3 className="mt-1 text-xl font-black text-[#202022]">Yeni Admin Oluştur</h3></div>
           <button
             onClick={handleClose}
-            className="rounded-xl p-2 text-[#8b98a7] transition hover:bg-[#eef4f8] hover:text-[#347bb7]"
+            className="rounded-xl p-2 text-[#909095] transition hover:bg-[#f6f6f6] hover:text-[#e30613]"
           >
             <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -67,7 +67,7 @@ const CreateAdminModal: React.FC<CreateAdminModalProps> = ({ isOpen, onClose }) 
 
         <form onSubmit={handleSubmit} className="space-y-4 p-6">
           <div>
-            <label htmlFor="displayName" className="mb-2 block text-xs font-bold text-[#536477]">
+            <label htmlFor="displayName" className="mb-2 block text-xs font-bold text-[#59595e]">
               Ad Soyad
             </label>
             <input
@@ -75,14 +75,14 @@ const CreateAdminModal: React.FC<CreateAdminModalProps> = ({ isOpen, onClose }) 
               id="displayName"
               value={displayName}
               onChange={(e) => setDisplayName(e.target.value)}
-              className="w-full rounded-xl border border-[#d8e2e9] bg-[#f8fafc] px-4 py-3 text-sm text-[#173b59] outline-none transition focus:border-[#347bb7] focus:bg-white focus:ring-4 focus:ring-[#347bb7]/10"
+              className="w-full rounded-xl border border-[#e4dddd] bg-[#fafafa] px-4 py-3 text-sm text-[#202022] outline-none transition focus:border-[#e30613] focus:bg-white focus:ring-4 focus:ring-[#e30613]/10"
               placeholder="Admin adı"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="mb-2 block text-xs font-bold text-[#536477]">
+            <label htmlFor="email" className="mb-2 block text-xs font-bold text-[#59595e]">
               E-posta
             </label>
             <input
@@ -90,14 +90,14 @@ const CreateAdminModal: React.FC<CreateAdminModalProps> = ({ isOpen, onClose }) 
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full rounded-xl border border-[#d8e2e9] bg-[#f8fafc] px-4 py-3 text-sm text-[#173b59] outline-none transition focus:border-[#347bb7] focus:bg-white focus:ring-4 focus:ring-[#347bb7]/10"
+              className="w-full rounded-xl border border-[#e4dddd] bg-[#fafafa] px-4 py-3 text-sm text-[#202022] outline-none transition focus:border-[#e30613] focus:bg-white focus:ring-4 focus:ring-[#e30613]/10"
               placeholder="admin@example.com"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="password" className="mb-2 block text-xs font-bold text-[#536477]">
+            <label htmlFor="password" className="mb-2 block text-xs font-bold text-[#59595e]">
               Şifre
             </label>
             <div className="relative">
@@ -106,7 +106,7 @@ const CreateAdminModal: React.FC<CreateAdminModalProps> = ({ isOpen, onClose }) 
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full rounded-xl border border-[#d8e2e9] bg-[#f8fafc] px-4 py-3 pr-11 text-sm text-[#173b59] outline-none transition focus:border-[#347bb7] focus:bg-white focus:ring-4 focus:ring-[#347bb7]/10"
+                className="w-full rounded-xl border border-[#e4dddd] bg-[#fafafa] px-4 py-3 pr-11 text-sm text-[#202022] outline-none transition focus:border-[#e30613] focus:bg-white focus:ring-4 focus:ring-[#e30613]/10"
                 placeholder="••••••••"
                 required
                 minLength={6}
@@ -114,7 +114,7 @@ const CreateAdminModal: React.FC<CreateAdminModalProps> = ({ isOpen, onClose }) 
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-3 text-[#8b98a7] hover:text-[#347bb7]"
+                className="absolute right-3 top-3 text-[#909095] hover:text-[#e30613]"
               >
                 {showPassword ? (
                   <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -131,7 +131,7 @@ const CreateAdminModal: React.FC<CreateAdminModalProps> = ({ isOpen, onClose }) 
           </div>
 
           <div>
-            <label htmlFor="confirmPassword" className="mb-2 block text-xs font-bold text-[#536477]">
+            <label htmlFor="confirmPassword" className="mb-2 block text-xs font-bold text-[#59595e]">
               Şifre Tekrar
             </label>
             <div className="relative">
@@ -140,7 +140,7 @@ const CreateAdminModal: React.FC<CreateAdminModalProps> = ({ isOpen, onClose }) 
                 id="confirmPassword"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="w-full rounded-xl border border-[#d8e2e9] bg-[#f8fafc] px-4 py-3 pr-11 text-sm text-[#173b59] outline-none transition focus:border-[#347bb7] focus:bg-white focus:ring-4 focus:ring-[#347bb7]/10"
+                className="w-full rounded-xl border border-[#e4dddd] bg-[#fafafa] px-4 py-3 pr-11 text-sm text-[#202022] outline-none transition focus:border-[#e30613] focus:bg-white focus:ring-4 focus:ring-[#e30613]/10"
                 placeholder="••••••••"
                 required
                 minLength={6}
@@ -148,7 +148,7 @@ const CreateAdminModal: React.FC<CreateAdminModalProps> = ({ isOpen, onClose }) 
               <button
                 type="button"
                 onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                className="absolute right-3 top-3 text-[#8b98a7] hover:text-[#347bb7]"
+                className="absolute right-3 top-3 text-[#909095] hover:text-[#e30613]"
               >
                 {showConfirmPassword ? (
                   <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -180,7 +180,7 @@ const CreateAdminModal: React.FC<CreateAdminModalProps> = ({ isOpen, onClose }) 
             <button
               type="button"
               onClick={handleClose}
-              className="rounded-xl border border-[#d8e2e9] px-4 py-2.5 text-sm font-bold text-[#536477] transition hover:bg-[#f3f7fa]"
+              className="rounded-xl border border-[#e4dddd] px-4 py-2.5 text-sm font-bold text-[#59595e] transition hover:bg-[#f7f7f7]"
             >
               İptal
             </button>
@@ -190,7 +190,7 @@ const CreateAdminModal: React.FC<CreateAdminModalProps> = ({ isOpen, onClose }) 
               className={`rounded-xl px-4 py-2.5 text-sm font-bold text-white transition-colors ${
                 isLoading || password !== confirmPassword
                   ? 'bg-gray-400 cursor-not-allowed'
-                  : 'bg-[#347bb7] hover:bg-[#286796]'
+                  : 'bg-[#e30613] hover:bg-[#b90913]'
               }`}
             >
               {isLoading ? 'Oluşturuluyor...' : 'Admin Oluştur'}

@@ -24,7 +24,7 @@ export default function AboutPage() {
           <div className="relative min-h-[480px] overflow-hidden rounded-[28px]">
             <Image src="/gumusoglu/project-planning.webp" alt="Elektrik proje planlama" fill className="object-cover" sizes="(max-width:1024px) 100vw,45vw" />
             <div className="absolute bottom-6 left-6 rounded-2xl bg-white/92 p-5 shadow-xl backdrop-blur">
-              <b className="text-3xl font-black text-[#347bb7]">1974</b>
+              <b className="text-3xl font-black text-[#e30613]">1974</b>
               <span className="ml-3 text-xs font-bold uppercase tracking-[.14em] text-[var(--muted)]">Kuruluş</span>
             </div>
           </div>
@@ -38,7 +38,7 @@ export default function AboutPage() {
               <ul className="space-y-3">
                 {services.map((service) => (
                   <li key={service} className="flex items-start gap-3">
-                    <FiCheck className="mt-2 shrink-0 text-[#45a0a0]" />
+                    <FiCheck className="mt-2 shrink-0 text-[#ef1b18]" />
                     <span>{service}</span>
                   </li>
                 ))}
@@ -50,18 +50,18 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[#eef5fa] px-5 py-20 sm:px-8 lg:px-14">
+      <section className="bg-[#fff3f3] px-5 py-20 sm:px-8 lg:px-14">
         <div className="mx-auto grid max-w-[1500px] gap-6 md:grid-cols-2">
           <article className="rounded-[26px] bg-white p-8">
-            <FiTarget className="h-7 w-7 text-[#347bb7]" />
-            <p className="mt-6 text-xs font-black uppercase tracking-[.18em] text-[#347bb7]">Misyonumuz <span className="normal-case tracking-normal text-[var(--muted)]">(Özgörev)</span></p>
+            <FiTarget className="h-7 w-7 text-[#e30613]" />
+            <p className="mt-6 text-xs font-black uppercase tracking-[.18em] text-[#e30613]">Misyonumuz <span className="normal-case tracking-normal text-[var(--muted)]">(Özgörev)</span></p>
             <h2 className="mt-3 text-2xl font-black">Güvenle ışık taşımak.</h2>
             <p className="mt-4 text-sm leading-7 text-[var(--muted)]">1974 yılından günümüze uzanan köklü tecrübemizle, bölgemizdeki tüm konut, ticarethane ve sanayi tesislerine güvenli, kaliteli ve kesintisiz enerji çözümleri sunmaktır. Gümüşoğlu Elektrik olarak; toptan ve perakende malzeme tedariğinden plan, proje ve taahhüt hizmetlerine kadar her aşamada uluslararası standartlara, güncel güvenlik yönetmeliklerine ve yüksek işçilik kalitesine bağlı kalarak yaşam alanlarına güvenle ışık taşımak temel varlık sebebimizdir.</p>
           </article>
 
           <article className="rounded-[26px] bg-white p-8">
-            <FiShield className="h-7 w-7 text-[#776eb4]" />
-            <p className="mt-6 text-xs font-black uppercase tracking-[.18em] text-[#776eb4]">Vizyonumuz <span className="normal-case tracking-normal text-[var(--muted)]">(Uzakgörüş)</span></p>
+            <FiShield className="h-7 w-7 text-[#b90913]" />
+            <p className="mt-6 text-xs font-black uppercase tracking-[.18em] text-[#b90913]">Vizyonumuz <span className="normal-case tracking-normal text-[var(--muted)]">(Uzakgörüş)</span></p>
             <h2 className="mt-3 text-2xl font-black">Bölgemizin güvenilir referansı.</h2>
             <p className="mt-4 text-sm leading-7 text-[var(--muted)]">Gelişen teknolojileri ve yenilikçi elektrik çözümlerini sektörümüzle buluşturarak, bölgemizde elektrik, tesisat ve projelendirme alanında akla gelen ilk ve en güvenilir kurum unvanını korumak; yarım asırlık kurumsal birikimimizi modern hizmet anlayışıyla geleceğe taşıyarak sektörde öncü ve referans gösterilen bir marka olmaya devam etmektir.</p>
           </article>
@@ -70,7 +70,7 @@ export default function AboutPage() {
 
       <section className="px-5 py-16 text-center sm:px-8">
         <h2 className="text-3xl font-black">Projeniz için yanınızdayız.</h2>
-        <Link href="/iletisim" className="mt-6 inline-flex items-center gap-2 rounded-xl bg-[#347bb7] px-6 py-4 text-sm font-black text-white">Bize ulaşın <FiArrowRight /></Link>
+        <Link href="/iletisim" className="mt-6 inline-flex items-center gap-2 rounded-xl bg-[#e30613] px-6 py-4 text-sm font-black text-white">Bize ulaşın <FiArrowRight /></Link>
       </section>
     </main>
   );

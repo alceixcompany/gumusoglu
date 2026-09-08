@@ -235,7 +235,7 @@ const HaberDetay = () => {
             <span className="text-sm font-medium text-[rgba(251,250,246,0.68)]">Paylaş:</span>
             <button
               onClick={shareOnFacebook}
-              className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+              className="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center hover:bg-red-700 transition-colors"
               title="Facebook'ta Paylaş"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -244,7 +244,7 @@ const HaberDetay = () => {
             </button>
             <button
               onClick={shareOnTwitter}
-              className="w-10 h-10 bg-sky-500 text-white rounded-full flex items-center justify-center hover:bg-sky-600 transition-colors"
+              className="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center hover:bg-red-700 transition-colors"
               title="Twitter'da Paylaş"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

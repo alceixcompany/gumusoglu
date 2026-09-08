@@ -364,7 +364,7 @@ const AdminGallery = () => {
                     <div className="flex gap-2">
                       <button
                         onClick={() => handleCategoryEdit(category)}
-                        className="flex-1 bg-blue-50 hover:bg-blue-100 text-blue-700 px-3 py-2 rounded-md text-sm font-medium transition-colors border border-blue-200"
+                        className="flex-1 bg-red-50 hover:bg-red-100 text-red-700 px-3 py-2 rounded-md text-sm font-medium transition-colors border border-red-200"
                       >
                         Düzenle
                       </button>
@@ -469,7 +469,7 @@ const AdminGallery = () => {
                     <div className="flex gap-2">
                       <button
                         onClick={() => handleItemEdit(item)}
-                        className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-2 py-1.5 rounded text-xs font-medium transition-colors"
+                        className="flex-1 bg-red-600 hover:bg-red-700 text-white px-2 py-1.5 rounded text-xs font-medium transition-colors"
                       >
                         Düzenle
                       </button>
@@ -761,21 +761,21 @@ const AdminGallery = () => {
                         <button
                           type="button"
                           onClick={() => setItemForm({...itemForm, imageUrl: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=600&fit=crop'})}
-                          className="block text-xs text-blue-600 hover:text-blue-800 text-left w-full"
+                          className="block text-xs text-red-600 hover:text-red-800 text-left w-full"
                         >
                           ✨ Cilt bakimi ornegi
                         </button>
                         <button
                           type="button"
                           onClick={() => setItemForm({...itemForm, imageUrl: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop'})}
-                          className="block text-xs text-blue-600 hover:text-blue-800 text-left w-full"
+                          className="block text-xs text-red-600 hover:text-red-800 text-left w-full"
                         >
                           🌿 Lazer epilasyon ornegi
                         </button>
                         <button
                           type="button"
                           onClick={() => setItemForm({...itemForm, imageUrl: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop'})}
-                          className="block text-xs text-blue-600 hover:text-blue-800 text-left w-full"
+                          className="block text-xs text-red-600 hover:text-red-800 text-left w-full"
                         >
                           💆 Vucut bakimi ornegi
                         </button>

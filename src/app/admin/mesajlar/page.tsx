@@ -56,7 +56,7 @@ const AdminMessages = () => {
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'new': return 'bg-blue-100 text-blue-700';
+      case 'new': return 'bg-red-100 text-red-700';
       case 'read': return 'bg-yellow-100 text-yellow-700';
       case 'replied': return 'bg-green-100 text-green-700';
       case 'closed': return 'bg-gray-100 text-gray-700';
@@ -233,7 +233,7 @@ const AdminMessages = () => {
       {/* Stats */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
         <div className="bg-white p-6 rounded-lg shadow-sm border">
-          <div className="text-2xl font-bold text-blue-600 mb-1">
+          <div className="text-2xl font-bold text-red-600 mb-1">
             {messages.filter(m => m.status === 'new').length}
           </div>
           <div className="text-sm text-gray-600">Yeni Mesaj</div>
@@ -266,7 +266,7 @@ const AdminMessages = () => {
             <select
               value={selectedStatus}
               onChange={(e) => setSelectedStatus(e.target.value)}
-              className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-red-500"
             >
               {statuses.map(status => (
                 <option key={status} value={status}>{status}</option>
@@ -278,7 +278,7 @@ const AdminMessages = () => {
             <select
               value={selectedPriority}
               onChange={(e) => setSelectedPriority(e.target.value)}
-              className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-red-500"
             >
               {priorities.map(priority => (
                 <option key={priority} value={priority}>{priority}</option>
@@ -327,14 +327,14 @@ const AdminMessages = () => {
                   <div className="flex items-center gap-2">
                     <button
                       onClick={() => handleReply(message)}
-                      className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded text-sm font-medium transition-colors"
+                      className="bg-red-600 hover:bg-red-700 text-white px-3 py-1.5 rounded text-sm font-medium transition-colors"
                     >
                       Yanıtla
                     </button>
                     <select
                       value={message.status}
                       onChange={(e) => handleStatusChange(message.id, e.target.value)}
-                      className="border border-gray-300 rounded-lg px-2 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="border border-gray-300 rounded-lg px-2 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-red-500"
                     >
                       <option value="new">Yeni</option>
                       <option value="read">Okundu</option>
@@ -392,7 +392,7 @@ const AdminMessages = () => {
                   type="text"
                   value={replySubject}
                   onChange={(e) => setReplySubject(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                   placeholder="Yanıt konusu"
                 />
               </div>
@@ -403,7 +403,7 @@ const AdminMessages = () => {
                   value={replyText}
                   onChange={(e) => setReplyText(e.target.value)}
                   rows={6}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                   placeholder="Müşteriye yanıtınızı yazın..."
                 ></textarea>
               </div>
@@ -419,7 +419,7 @@ const AdminMessages = () => {
                 <button
                   onClick={handleSendReply}
                   disabled={!replyText.trim()}
-                  className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white rounded-lg transition-colors disabled:cursor-not-allowed"
+                  className="flex-1 px-4 py-2 bg-red-600 hover:bg-red-700 disabled:bg-gray-400 text-white rounded-lg transition-colors disabled:cursor-not-allowed"
                 >
                   Yanıt Gönder
                 </button>
